@@ -1,0 +1,101 @@
+@import url('http://fonts.cdnfonts.com/css/pricedown');
+@import url('http://fonts.cdnfonts.com/css/vice-city-sans');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('./images/bg.jpg');
+    background-size: 100%;
+    
+}
+.container {
+    display: flex;
+}
+
+#left {
+    width: 600px;
+    height: 650px;
+    background-color: rgb(1,1,1, 30%);
+}
+
+.h1 {
+    color: rgb(251, 194, 229);
+    text-shadow: 2px 2px 4px #131212;
+    font-family: 'Pricedown Bl', sans-serif;
+    padding: 10px 0 0 80px;
+}
+
+.h1:hover {
+    color: rgb(251, 194, 229);
+    text-shadow: 4px 4px 8px #131212;
+    font-family: 'Pricedown Bl', sans-serif;
+    padding: 10px 0 0 80px;
+}
+.para {
+    color: azure;
+    padding: 10px 40px 0 70px;
+    font-family: 'Vice City Sans', sans-serif;                                              
+}
+#child2 {
+    color: azure;
+    padding: 10px 40px 0 70px;
+    font-family: 'Vice City Sans', sans-serif; 
+    display: none;                                             
+}
+
+/* #para1:hover {
+    color: rgb(255, 120, 156);
+    font-size: larger;
+    padding: 10px 40px 0 70px; 
+    font-family: 'Vice City Sans', sans-serif;   
+    transition: all .2s ease;
+-webkit-transition: all .2s ease;                                           
+} */
+
+/* .vid-container>h1{
+    font-family: 'Vice City Sans', sans-serif;
+    color: rgb(6, 5, 6) ;
+    padding: 0 220px;
+} */
+#svgelem {
+    margin-top: 20px;
+}
+#parent {
+    padding: 10px 40px 0 70px;
+}
+#buy {
+    height: 20px;
+    width: 100px;
+    font-family: 'Vice City Sans', sans-serif;
+    margin-bottom: 10px;
+}
+#show {
+    height: 20px;
+    width: 100px;
+    font-family: 'Vice City Sans', sans-serif;
+}
+
+#buy:hover{
+    background-color: rgb(198, 239, 241);
+}
+#show:hover{
+    background-color: rgb(198, 239, 241);
+}
+
+video {
+    height: 320px;
+    box-shadow: 0 0 10px 0;
+}
+.but1 {
+    height: 20px;
+    width: 100px;
+    font-family: 'Vice City Sans', sans-serif;
+    margin: 10px 40px 0 40px;
+    
+}
+.text {
+    color: azure;
+    padding: 10px 40px 0 40px;
+    font-family: 'Vice City Sans', sans-serif;  
+    text-shadow: 2px 2px 4px #131212;
+}
