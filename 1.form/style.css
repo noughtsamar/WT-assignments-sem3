@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: #fff9ca;
+  font-family: "Lato", "sans-serif";
+}
+
+.navbar {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar img {
+  width: 10%;
+  height: 10%;
+  padding: 10px 0 0 0;
+}
+
+table {
+  margin: 20px auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+th {
+  padding: 10px;
+}
+
+#a {
+  border-radius: 20px 0 0 0;
+}
+#b {
+  border-radius: 0 20px 0 0;
+}
+#c {
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h2 {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  margin: 5% auto 0 auto;
+}
+
+.survey {
+  margin: 0 0 40px 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  width: 40%;
+  background-color: #ffdeb4;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  border: 1px solid peachpuff;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 0 5%;
+}
+
+input[type="number"],
+select,
+textarea {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 0 5%;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 0 5%;
+}
+
+input[type="radio"],
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin: 0 5%;
+}
+
+input[type="submit"] {
+  background-color: #ffb4b4;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 30%;
+  margin: 4% auto 0 auto;
+}
+
+.btn:hover {
+  background-color: #f89e9e;
+}
+.btn-reset:hover {
+  background-color: #f89e9e;
+}
+
+input[type="reset"] {
+  background-color: #ffb4b4;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 30%;
+  margin: 2% auto 0 auto;
+}
+
+.form-control {
+  margin: 20px 10px 10px 10px;
+}
+
+fieldset {
+  border: none;
+  margin: 0 5%;
+}
+
+h4 {
+  margin-left: 5%;
+}
+
+legend h4 {
+  margin-left: 0;
+}
+
+th {
+  background-color: #ffb4b4;
+  color: black;
+  text-align: left;
+  border: 1px solid peachpuff;
+}
+
+td {
+  padding: 10px;
+  background-color: #ffdeb4;
+  border: 1px solid palegoldenrod;
+}

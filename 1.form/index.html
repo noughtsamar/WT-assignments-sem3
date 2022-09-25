@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="title.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>PESU</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="navbar">
+      <img src="logo.png" />
+    </div>
+
+    <div class="content">
+      <table class="record">
+        <!-- <caption> -->
+        <h2>PES Student count information</h2>
+        <!-- </caption> -->
+        <tr>
+          <th id="a">Campus</th>
+          <th>Course</th>
+          <th id="b">No. of students</th>
+        </tr>
+        <tr>
+          <th rowspan="2">RR</th>
+          <td>B.Tech</td>
+          <td>760</td>
+        </tr>
+        <tr>
+          <td>M.Tech</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <th rowspan="2">EC</th>
+          <td>B.Tech</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <td>M.Tech</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td id="c" colspan="3">Total Number of Students: 1370</td>
+        </tr>
+      </table>
+
+      <h2 class="survey">PES Student survey form</h2>
+      <form class="form" onsubmit="myfun()">
+        <div class="form-control a">
+          <h4 class="t">Name</h4>
+          <br />
+          <input type="text" name="name" placeholder="Name" required />
+        </div>
+        <div class="form-control a">
+          <h4>Age</h4>
+          <br />
+          <input type="number" name="age" placeholder="Age" min="16" required />
+        </div>
+        <div class="form-control a">
+          <h4>Email</h4>
+          <br />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="form-control">
+          <h4>Which stream are you currrently enrolled in ?</h4>
+          <br />
+          <select name="course" id="course">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="BT">BioTech</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <h4>Will you take up minor courses ?</h4>
+          <br />
+          <input type="radio" id="yes" name="minor" value="yes" />
+          <label for="yes">yes</label><br />
+          <input type="radio" id="no" name="minor" value="no" />
+          <label for="no">no</label><br />
+          <input type="radio" id="maybe" name="minor" value="maybe" />
+          <label for="maybe">maybe</label>
+        </div>
+
+        <div class="form-control">
+          <fieldset>
+            <legend>
+              <h4>Languages and Frameworks known:</h4>
+              <br />
+            </legend>
+            <div>
+              <input type="checkbox" id="c" name="c" />
+              <label for="c">C</label>
+            </div>
+            <div>
+              <input type="checkbox" id="cpp" name="cpp" />
+              <label for="cpp">C++</label>
+            </div>
+            <div>
+              <input type="checkbox" id="java" name="java" />
+              <label for="java">Java</label>
+            </div>
+            <div>
+              <input type="checkbox" id="py" name="py" />
+              <label for="py">Python</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-control">
+          <label for="comment"><h4>Any comments or suggestions</h4></label>
+          <br />
+          <textarea id="comment" name="comment" rows="4" cols="50">
+            Enter your comments here.
+          </textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn-reset btn-primary" />
+      </form>
+    </div>
+  </body>
+</html>
